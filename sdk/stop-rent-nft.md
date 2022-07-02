@@ -1,5 +1,7 @@
 # NFT Stop Renting 
 
+
+{% code title="src/handle-stop-rent.tsx" %}
 ```javascript
 // import supportive types
 import { PaymentToken, ContractType, NFTStandard } from "@nftsafe/sdk";
@@ -29,7 +31,7 @@ if(isCollateralized) {
 Make sure to add this above data into following function.
 {% endhint %}
 
-
+### 1.Check approve nft
 {% code title="src/handle-stop-rent.tsx" %}
 ```javascript
 
@@ -37,7 +39,6 @@ import {  ERC721Abi,ERC1155Abi } from "./abi";
 export const MAX_UINT256 =
   "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 
-//************** Check and Approve of NFT *****************
 const handleCheckApprove = async(stopRentingInput, isERC721, isCollateralized) => {
   if (!stopRentingInput) return EMPTY;
   // paymentToken will be type of "PaymentToken" instance of "@nftsafe/sdk" 
@@ -58,7 +59,7 @@ const handleCheckApprove = async(stopRentingInput, isERC721, isCollateralized) =
 ```
 {% endcode %}
 
-
+### 2.Approve nft
 {% code title="src/handle-stop-rent.tsx" %}
 ```javascript
 /*
@@ -87,6 +88,7 @@ const handleApproveAll = async(stopRentingInput) => {
 {% endcode %}
 
 
+### 3.Start stop nft renting
 
 {% code title="src/handle-stop-rent.tsx" %}
 ```javascript

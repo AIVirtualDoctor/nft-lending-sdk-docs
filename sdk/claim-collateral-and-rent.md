@@ -1,6 +1,7 @@
 
 # Claim Collateral or Rent: 
 
+{% code title="src/handle-claim.tsx" %}
 ```javascript
 // import supportive types
 import { PaymentToken, ContractType, NFTStandard } from "@nftsafe/sdk";
@@ -26,7 +27,6 @@ Make sure to add this above data into following function.
 
 {% code title="src/handle-claim.tsx" %}
 ```javascript
-
 const handleClaimRentOrCollateral = (selectedItems:{selectedItems:[]}) => {
     if (!nftSafeContractInstance) return EMPTY;
     

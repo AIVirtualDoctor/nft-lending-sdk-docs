@@ -1,5 +1,7 @@
 # NFt Renting
 
+
+{% code title="src/handle-rent.tsx" %}
 ```javascript
 // import supportive types
 import { PaymentToken, ContractType, NFTStandard } from "@nftsafe/sdk";
@@ -30,11 +32,10 @@ if(isCollateralized) {
 Make sure to add this above data into following function as lend, rent, stop lend, stop rent and claim collateral and rent.
 {% endhint %}
 
+
+### 1.Check payment token approve
 {% code title="src/handle-rent.tsx" %}
 ```javascript
-
-
-//************** Check and Approve payment token *****************
 
 const startCheckApprove = async(rentingInput, isCollateralized) => {
   if (!paymentTokenProviderInstance) return EMPTY;
@@ -51,7 +52,7 @@ const startCheckApprove = async(rentingInput, isCollateralized) => {
 ```
 {% endcode %}
 
-
+### 2.Approve payment token
 {% code title="src/handle-rent.tsx" %}
 ```javascript
 /*
@@ -71,7 +72,7 @@ const startApproveAll = async(rentingInput,isCollateralized) => {
 ```
 {% endcode %}
 
-
+### 3.Start nft renting
 {% code title="src/handle-rent.tsx" %}
 ```javascript
 const handleRent = (rentingInputs:{rentingInputs:[]}) => {

@@ -1,4 +1,6 @@
 # NFT Stop Lending 
+
+{% code title="src/handle-stop-lend.tsx" %}
 ```javascript
 // import supportive types
 import { PaymentToken, ContractType, NFTStandard } from "@nftsafe/sdk";
@@ -21,6 +23,8 @@ if(isCollateralized) {
 Make sure to add this above data into following function.
 {% endhint %}
 
+
+### Start stop nft lending
 {% code title="src/handle-stop-lend.tsx" %}
 ```javascript
 

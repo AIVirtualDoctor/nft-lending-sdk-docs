@@ -1,5 +1,7 @@
 # NFt Lending
 
+
+{% code title="src/handle-lend.tsx" %}
 ```javascript
 // import supportive types
 import { PaymentToken, ContractType, NFTStandard } from "@nftsafe/sdk";
@@ -29,7 +31,7 @@ if(isCollateralized) {
 Make sure to add this above data into following function.
 {% endhint %}
 
-### Check NFT Approve
+### 1.Check nft approve
 
 {% code title="src/handle-lend.tsx" %}
 ```javascript
@@ -56,7 +58,7 @@ const handleCheckApprove = async(lendingInput,  isCollateralized) => {
 {% endcode %}
 
 
-### Approve NFT
+### 2.Approve nft
 
 {% code title="src/handle-lend.tsx" %}
 ```javascript
@@ -86,7 +88,7 @@ const handleApproveAll = async(rentingInput,isCollateralized) => {
 {% endcode %}
 
 
-### Start Lend NFT
+### 3.Start nft lending
 
 {% code title="src/handle-lend.tsx" %}
 ```javascript

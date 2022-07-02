@@ -1,113 +1,4 @@
-# Connnect your platform with SDK
-
-This guide will show you how you can do it in just a few easy steps.
-
-### 1. Creating React App
-
-To start a new Create React App project with TypeScript, you can run:
-
-{% tabs %}
-{% tab title="npx" %}
-```
-npx create-react-app my-app --template typescript
-```
-{% endtab %}
-
-{% tab title="yarn" %}
-```bash
-yarn create react-app my-app --template typescript
-```
-{% endtab %}
-{% endtabs %}
-
-### 2. Install the SDK
-
-Make sure to have **WEB3**, **WEB3** or  **Wallet-connect** installed as dependencies. Then install **@nftsafe/sdk**:
-
-{% tabs %}
-{% tab title="npm" %}
-```
-npm install @nftsafe/sdk
-```
-{% endtab %}
-
-{% tab title="yarn" %}
-```
-yarn add @nftsafe/sdk
-```
-{% endtab %}
-{% endtabs %}
-
-### 3. Import the SDK
-You can import any of the function from the below  list of exported function in the sdk:
-
-{% code title="src/index.tsx" %}
-```javascript
-export { NFTSafe } from './nftSafe';
-export { INFTSafe, PaymentToken, NFTStandard } from './types';
-export { packPrice, unpackPrice, toPaddedHex, prepareBatch, numberToByte4, numberToByte8, numberToByte16, numberToByte32, byteToNumber } from './utils';
-export { TypeNetworkDetails, TypeNetworkConfig, CONTRACT_TYPE_LIST, ContractType, SupportedChainIds, ALL_SUPPORTED_CHAIN_IDS, NetworkConfig, GetNetworkDetailsByChainId } from './networkConfig';
-export { AddressWhitelisterAbi } from './abi/AddressWhitelisterAbi';
-export { AddressWhitelisterBytecode } from './abi/AddressWhitelisterBytecode';
-export { PaymentTokenProviderAbi } from './abi/PaymentTokenProviderAbi';
-export { PaymentTokenProviderBytecode } from './abi/PaymentTokenProviderBytecode';
-export { NFTSafeAbi } from './abi/NFTSafeAbi';
-export { NFTSafeBytecode } from './abi/NFTSafeBytecode';
-export { DEFAULT_CHAINID, DEFAULT_CHAIN_NAME } from './consts';
-```
-{% endcode %}
-
-Now, your can import required element and call it.
-```javascript
-import { NFTSafe, ... DEFAULT_CHAIN_NAME } from "@nftsafe/sdk";
-```
-{% endcode %}
-
-
-### 4. Get network configs for availble chains
-Get all details like contract addresses, chain details, moralis sdk details, and other supportive utils according chainid
-
-{% code title="src/blockchainConfig.tsx" %}
-```javascript
-// import NFTSafe, ContractType from the SDK 
-import { NetworkConfig, GetNetworkDetailsByChainId } from "@nftsafe/sdk";
-const sdkNetworkConfigs= NetworkConfig;
-const sdkNetworkConfigsByChainid = GetNetworkDetailsByChainId(Number(chainId)); // Note: ChainId must be supported chainId
-
-// Now, you can use all parameter as below
-console.log(sdkNetworkConfigsByChainid.rpc); // Network RPC
-
-/*NOTE: Contract address will be in List format 
-- Contract Addreess List containe latest address at first position and so on.
-- Get latest contract address as below.
-*/
-// Return List of all version contract addresses
-console.log(sdkNetworkConfigsByChainid.collateralizedContractAddresses); //Collateralized Contract Addresses : format [] 
-console.log(sdkNetworkConfigsByChainid.collateralFreeContractAddresses); //Collateral Free Contract Addresses : format []
-console.log(sdkNetworkConfigsByChainid.paymentTokenProviderContractAddresses); //Payment Token Provide rContract Address : format []
-// Latest Contract Address
-export const collateralizedContractAddress=sdkNetworkConfigsByChainid.collateralizedContractAddresses[0];
-console.log(collateralizedContractAddress); //Collateralized Contract Address
-
-export const collateralFreeContractAddresses=sdkNetworkConfigsByChainid.collateralFreeContractAddresses[0];
-console.log(collateralFreeContractAddresses); //Collateral Free Contract Address
-
-export const paymentTokenProviderContractAddress=sdkNetworkConfigsByChainid.paymentTokenProviderContractAddresses[0];
-console.log(paymentTokenProviderContractAddress); //Payment Token Provide rContract Address
-/* .
-   .
-   .
-   .
-*/
-```
-{% endcode %}
-
-{% hint style="info" %}
-Create constant or object of network config becuase we are going to use above addesses in lend, rent, stop lend, stop rent and claim collateral and rent functions.
-{% endhint %}
-
-
-### 5. Intialize and use Collateralized or CollateralFree NFTSafe Object of SDK
+# Intialize and use Collateralized or CollateralFree NFTSafe instance
 
 Import NFTSafe class in your project and call **`NFTSafe`** Constructor by passing required parameter as shown below
 ```javascript
@@ -115,6 +6,7 @@ Import NFTSafe class in your project and call **`NFTSafe`** Constructor by passi
 
 // import NFTSafe, ContractType from the SDK 
 import {NFTSafe, ContractType } from "@nftsafe/sdk";
+//The "ContractType" enum which is already present in SDK will help you to get the specific type of contract.
 //************ Collateralized Contract Instance **************
 new NFTSafe(signer, Number(chainId), ContractType.COLLATERALIZED);
 
@@ -168,7 +60,7 @@ export const useNFTSafeSDK = ({isCollateralized, signer, chainId }:{isCollateral
 {% endcode %}
 
 
-### 6. Use NFTSafe Contract methods and create necessary contract objects
+### Use NFTSafe Contract methods and create necessary contract objects
 
 Now that the SDK setup is done successfully we can use the power of NFTSafe and other contracts along with supportive utils.
 

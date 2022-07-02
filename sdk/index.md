@@ -1,3 +1,3 @@
-# NFTSafe SDK
+# NFTSafe Contracts
 
-Something about NFTSafe SDK
+Something about contracts
