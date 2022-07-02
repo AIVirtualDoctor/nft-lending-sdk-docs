@@ -4,7 +4,6 @@
 ```javascript
 
 // Make sure to add point 6's mentioned data of setup-sdk section.
-
 import {  ERC20Abi } from "./abi";
 import { BigNumber } from "ethers";
 export const MAX_UINT256 =
