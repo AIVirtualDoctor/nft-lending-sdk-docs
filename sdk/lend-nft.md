@@ -1,15 +1,38 @@
 # NFt Lending
 
+```javascript
+// import supportive types
+import { PaymentToken, ContractType, NFTStandard } from "@nftsafe/sdk";
+import { BigNumber } from "ethers";
+import { ERC20Abi, ERC721Abi,ERC1155Abi } from "./abi";
+// import network config data like 
+import {collateralizedContractAddress, collateralFreeContractAddresses, paymentTokenProviderContractAddress, ...} from '/blockchainConfig';
+
+
+const signer = getSigner(); // Get signer from your created WEB3 instance or provider 
+var nftSafeContractInstance;
+var paymentTokenProviderInstance;
+
+// useNFtSafe hook to get desired NftSafe contract instance 
+if(isCollateralized) {
+  nftSafeContractInstance = useNFTSafeSDK(isCollateralized, signer, chainId); // isCollateralized = true
+}else{
+  nftSafeContractInstance= useNFTSafeSDK(isCollateralized, signer, chainId); // isCollateralized = false
+}
+
+ paymentTokenProviderInstance=  new ethers.Contract(paymentTokenProviderContractAddress, NFTSafeAbi, signer)
+
+```
+{% endcode %}
+
 {% hint style="info" %}
-Make sure to add point 6's mentioned data of setup-sdk section.
+Make sure to add this above data into following function.
 {% endhint %}
 
 ### Check NFT Approve
 
 {% code title="src/handle-lend.tsx" %}
 ```javascript
-
-import {  ERC721Abi,ERC1155Abi } from "./abi";
 
 const handleCheckApprove = async(lendingInput,  isCollateralized) => {
   if (!lendingInput) return EMPTY;
@@ -18,7 +41,7 @@ const handleCheckApprove = async(lendingInput,  isCollateralized) => {
   var nftTypeContractInstance;
 
   // Get valid type of NFT type contract object  
-  if (isERC721.isERC721) {
+  if (lendingInput.isERC721) {
     nftTypeContractInstance= new ethers.Contract(lendingInput.nftAddress,ERC721Abi,signer);  
   } else {
     nftTypeContractInstance= new ethers.Contract(lendingInput.nftAddress,ERC1155Abi,signer);
@@ -37,8 +60,6 @@ const handleCheckApprove = async(lendingInput,  isCollateralized) => {
 
 {% code title="src/handle-lend.tsx" %}
 ```javascript
-
-import {  ERC721Abi,ERC1155Abi } from "./abi";
 
 /*
 If user is first time and as above check approve is not efficient then call this function and 

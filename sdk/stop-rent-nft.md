@@ -1,7 +1,32 @@
 # NFT Stop Renting 
 
+```javascript
+// import supportive types
+import { PaymentToken, ContractType, NFTStandard } from "@nftsafe/sdk";
+import { BigNumber } from "ethers";
+import { ERC20Abi, ERC721Abi,ERC1155Abi } from "./abi";
+// import network config data like 
+import {collateralizedContractAddress, collateralFreeContractAddresses, paymentTokenProviderContractAddress, ...} from '/blockchainConfig';
+
+
+const signer = getSigner(); // Get signer from your created WEB3 instance or provider 
+var nftSafeContractInstance;
+var paymentTokenProviderInstance;
+
+// useNFtSafe hook to get desired NftSafe contract instance 
+if(isCollateralized) {
+  nftSafeContractInstance = useNFTSafeSDK(isCollateralized, signer, chainId); // isCollateralized = true
+}else{
+  nftSafeContractInstance= useNFTSafeSDK(isCollateralized, signer, chainId); // isCollateralized = false
+}
+
+ paymentTokenProviderInstance=  new ethers.Contract(paymentTokenProviderContractAddress, NFTSafeAbi, signer)
+
+```
+{% endcode %}
+
 {% hint style="info" %}
-Make sure to add point 6's mentioned data of setup-sdk section.
+Make sure to add this above data into following function.
 {% endhint %}
 
 

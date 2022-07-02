@@ -1,9 +1,28 @@
 
 # Claim Collateral or Rent: 
 
+```javascript
+// import supportive types
+import { PaymentToken, ContractType, NFTStandard } from "@nftsafe/sdk";
+import { BigNumber } from "ethers";
+
+const signer = getSigner(); // Get signer from your created WEB3 instance or provider 
+var nftSafeContractInstance;
+
+// useNFtSafe hook to get desired NftSafe contract instance 
+if(isCollateralized) {
+  nftSafeContractInstance = useNFTSafeSDK(isCollateralized, signer, chainId); // isCollateralized = true
+}else{
+  nftSafeContractInstance= useNFTSafeSDK(isCollateralized, signer, chainId); // isCollateralized = false
+}
+
+```
+{% endcode %}
+
 {% hint style="info" %}
-Make sure to add point 6's mentioned data of setup-sdk section.
+Make sure to add this above data into following function.
 {% endhint %}
+
 
 {% code title="src/handle-claim.tsx" %}
 ```javascript

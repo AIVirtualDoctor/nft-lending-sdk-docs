@@ -86,13 +86,13 @@ console.log(sdkNetworkConfigsByChainid.collateralizedContractAddresses); //Colla
 console.log(sdkNetworkConfigsByChainid.collateralFreeContractAddresses); //Collateral Free Contract Addresses : format []
 console.log(sdkNetworkConfigsByChainid.paymentTokenProviderContractAddresses); //Payment Token Provide rContract Address : format []
 // Latest Contract Address
-const collateralizedContractAddress=sdkNetworkConfigsByChainid.collateralizedContractAddresses[0];
+export const collateralizedContractAddress=sdkNetworkConfigsByChainid.collateralizedContractAddresses[0];
 console.log(collateralizedContractAddress); //Collateralized Contract Address
 
-const collateralFreeContractAddresses=sdkNetworkConfigsByChainid.collateralFreeContractAddresses[0];
+export const collateralFreeContractAddresses=sdkNetworkConfigsByChainid.collateralFreeContractAddresses[0];
 console.log(collateralFreeContractAddresses); //Collateral Free Contract Address
 
-const paymentTokenProviderContractAddress=sdkNetworkConfigsByChainid.paymentTokenProviderContractAddresses[0];
+export const paymentTokenProviderContractAddress=sdkNetworkConfigsByChainid.paymentTokenProviderContractAddresses[0];
 console.log(paymentTokenProviderContractAddress); //Payment Token Provide rContract Address
 /* .
    .
@@ -193,7 +193,7 @@ if(isCollateralized) {
   nftSafeContractInstance= useNFTSafeSDK(isCollateralized, signer, chainId); // isCollateralized = false
 }
 
- paymentTokenProviderInstance=  new Contract(paymentTokenProviderContractAddress, NFTSafeAbi, signer)
+ paymentTokenProviderInstance=  new ethers.Contract(paymentTokenProviderContractAddress, NFTSafeAbi, signer)
 
 ```
 {% endcode %}
