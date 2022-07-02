@@ -21,7 +21,7 @@ SDK provider the "NetworkConfig" JSON to get the Contract addresses, Subgraph UR
 
 import { TypeNetworkDetails } from "@nftsafe/sdk";
 
-// It will provide you below all for all sdk supported chains
+// It will provide you below all the details for all sdk supported chains
 type TypeNetworkDetails =
 {
     chainid: {
