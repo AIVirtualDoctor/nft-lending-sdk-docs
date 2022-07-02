@@ -1,9 +1,11 @@
-# Stop LEND NFt
+# NFT Stop Lending 
+
+{% hint style="info" %}
+Make sure to add point 6's mentioned data of setup-sdk section.
+{% endhint %}
 
 {% code title="src/handle-stop-lend.tsx" %}
 ```javascript
-
-// Make sure to add point 6's mentioned data of setup-sdk section.
 
 const handleStopLending = (stopLendingInputs:{stopLendingInputs:[]}) => {
     if (!nftSafeContractInstance) return EMPTY;

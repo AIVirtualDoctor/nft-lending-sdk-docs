@@ -39,8 +39,7 @@ yarn add @nftsafe/sdk
 {% endtabs %}
 
 ### 3. Import the SDK
-
-You will see the following code:
+You can import any of the function from the below  list of exported function in the sdk:
 
 {% code title="src/index.tsx" %}
 ```javascript
@@ -56,6 +55,8 @@ export { NFTSafeAbi } from './abi/NFTSafeAbi';
 export { NFTSafeBytecode } from './abi/NFTSafeBytecode';
 export { DEFAULT_CHAINID, DEFAULT_CHAIN_NAME } from './consts';
 ```
+{% endcode %}
+
 Now, your can import required element and call it.
 ```javascript
 import { NFTSafe, ... DEFAULT_CHAIN_NAME } from "@nftsafe/sdk";
@@ -63,7 +64,7 @@ import { NFTSafe, ... DEFAULT_CHAIN_NAME } from "@nftsafe/sdk";
 {% endcode %}
 
 
-### 4. Get chain's network configs
+### 4. Get network configs for availble chains
 Get all details like contract addresses, chain details, moralis sdk details, and other supportive utils according chainid
 
 {% code title="src/blockchainConfig.tsx" %}
@@ -128,6 +129,8 @@ new NFTSafe(signer, Number(chainId), ContractType.COLLATERAL_FREE);
 **Good to do:** Craete NFTSafe react hook so it will give you strong grip for using sdk over more pages.
 {% endhint %}
 
+So, let's create react hook of NFtSafe contract object for flexible use of it.
+
 {% code title="src/useNFTSafeSdk.tsx" %}
 ```javascript
 import { useCallback, useContext, useMemo } from "react";
@@ -165,9 +168,11 @@ export const useNFTSafeSDK = ({isCollateralized, signer, chainId }:{isCollateral
 {% endcode %}
 
 
-### 6. Now, use NFTSafe Contract methods and create necessary contract objects
+### 6. Use NFTSafe Contract methods and create necessary contract objects
 
-Let's first, get your desired contract instance
+Now that the SDK setup is done successfully we can use the power of NFTSafe and other contracts along with supportive utils.
+
+Let's first, get our desired contract instance
 
 ```javascript
 // import supportive types
@@ -508,20 +513,4 @@ const handleClaimRentOrCollateral = (selectedItems:{selectedItems:[]}) => {
 {% endcode %} -->
 
 
-
-
-
-
-
-
-
-<!-- 
-## Tip of the iceberg
-
-As you can probably already see NFTSafe is a true superpower for blockchain developers. But this small demo is just the tip of the iceberg. NFTSafe provides endless tools and features for any blockchain use-case. Most importantly, <mark style="color:green;">**everything is cross-chain by default**</mark>.
-
-Feel free to explore the rest of the documentation in order to grasp the full power of NFTSafe.
-
-{% hint style="info" %}
-
-{% endhint %} -->
+Now, time use the power of NFTSafe Sdk by using follwing basic function.

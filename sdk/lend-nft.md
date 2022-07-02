@@ -1,12 +1,15 @@
-# LEND NFt
+# NFt Lending
+
+{% hint style="info" %}
+Make sure to add point 6's mentioned data of setup-sdk section.
+{% endhint %}
+
+### Check NFT Approve
 
 {% code title="src/handle-lend.tsx" %}
 ```javascript
 
-// Make sure to add point 6's mentioned data of setup-sdk section.
 import {  ERC721Abi,ERC1155Abi } from "./abi";
-
-//************** Check and Approve NFT *****************
 
 const handleCheckApprove = async(lendingInput,  isCollateralized) => {
   if (!lendingInput) return EMPTY;
@@ -26,6 +29,16 @@ const handleCheckApprove = async(lendingInput,  isCollateralized) => {
   return isApproved;
 };
 
+```
+{% endcode %}
+
+
+### Approve NFT
+
+{% code title="src/handle-lend.tsx" %}
+```javascript
+
+import {  ERC721Abi,ERC1155Abi } from "./abi";
 
 /*
 If user is first time and as above check approve is not efficient then call this function and 
@@ -48,8 +61,14 @@ const handleApproveAll = async(rentingInput,isCollateralized) => {
   return await nftTypeContractInstance.setApprovalForAll(nftSafeContractAddress, true);
 };
 
-/// **************** End NFT approve  *************  
+```
+{% endcode %}
 
+
+### Start Lend NFT
+
+{% code title="src/handle-lend.tsx" %}
+```javascript
 
 const handleLend = (lendingInputs:{lendingInputs:[]}) => {
     if (!nftSafeContractInstance) return EMPTY;

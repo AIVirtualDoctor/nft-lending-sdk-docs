@@ -1,9 +1,12 @@
 
 # Claim Collateral or Rent: 
 
+{% hint style="info" %}
+Make sure to add point 6's mentioned data of setup-sdk section.
+{% endhint %}
+
 {% code title="src/handle-claim.tsx" %}
 ```javascript
-// Make sure to add point 6's mentioned data of setup-sdk section.
 
 const handleClaimRentOrCollateral = (selectedItems:{selectedItems:[]}) => {
     if (!nftSafeContractInstance) return EMPTY;
@@ -26,3 +29,11 @@ const handleClaimRentOrCollateral = (selectedItems:{selectedItems:[]}) => {
 };
 ```
 {% endcode %}
+
+
+
+{% hint style="success" %}
+ We have  successfully connected and used NFTsafe SDk
+{% endhint %}
+
+Feel free to explore the rest of the documentation in order to grasp the full power of NFTSafe SDK.

@@ -1,9 +1,13 @@
-# Stop RENT NFt
+# NFT Stop Renting 
+
+{% hint style="info" %}
+Make sure to add point 6's mentioned data of setup-sdk section.
+{% endhint %}
+
 
 {% code title="src/handle-stop-rent.tsx" %}
 ```javascript
 
-// Make sure to add point 6's mentioned data of setup-sdk section.
 import {  ERC721Abi,ERC1155Abi } from "./abi";
 export const MAX_UINT256 =
   "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
@@ -26,8 +30,12 @@ const handleCheckApprove = async(stopRentingInput, isERC721, isCollateralized) =
   const isApproved =await nftTypeContractInstance.isApprovedForAll(currentUserAddress, nftSafeContractAddress);
   return isApproved;
 };
+```
+{% endcode %}
 
 
+{% code title="src/handle-stop-rent.tsx" %}
+```javascript
 /*
 If user is first time and as above check approve is not efficient then call this function and 
 start giving approvel of payment token to the contract address
@@ -55,7 +63,7 @@ const handleApproveAll = async(stopRentingInput) => {
 
 
 
-{% code title="src/index.tsx" %}
+{% code title="src/handle-stop-rent.tsx" %}
 ```javascript
 // import supportive types
 import { PaymentToken, ContractType, NFTStandard } from "@nftsafe/sdk";

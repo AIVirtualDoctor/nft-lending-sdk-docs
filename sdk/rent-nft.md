@@ -1,9 +1,11 @@
-# RENT NFt
+# NFt Renting
+
+{% hint style="info" %}
+Make sure to add point 6's mentioned data of setup-sdk section.
+{% endhint %}
 
 {% code title="src/handle-rent.tsx" %}
 ```javascript
-
-// Make sure to add point 6's mentioned data of setup-sdk section.
 import {  ERC20Abi } from "./abi";
 import { BigNumber } from "ethers";
 export const MAX_UINT256 =
@@ -23,7 +25,12 @@ const startCheckApprove = async(rentingInput, isCollateralized) => {
   return allowance.lt(BigNumber.from(MAX_UINT256).div(2));
 };
 
+```
+{% endcode %}
 
+
+{% code title="src/handle-rent.tsx" %}
+```javascript
 /*
 If user is first time and as above check approve is not efficient then call this function and 
 start giving approvel of payment token to the contract address
@@ -38,9 +45,12 @@ const startApproveAll = async(rentingInput,isCollateralized) => {
     const nftSafeContractAddress=isCollateralized ? collateralizedContractAddress : collateralFreeContractAddresses;
   return await erc20.approve(nftSafeContractAddress, MAX_UINT256);
 };
+```
+{% endcode %}
 
-/// **************** End payment token approve  *************  
 
+{% code title="src/handle-rent.tsx" %}
+```javascript
 const handleRent = (rentingInputs:{rentingInputs:[]}) => {
     if (!nftSafeContractInstance) return EMPTY;
     
