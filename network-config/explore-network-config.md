@@ -167,7 +167,7 @@ ContractType.PAYMENT_TOKEN_PROVIDER
 
 
 {% hint style="info" %}
-Create constant or object of network config becuase we are going to use above addesses in lend, rent, stop lend, stop rent and claim collateral and rent functions.
+Create constant or object of network config becuase we are going to use above addesses and other utils in lend, rent, stop lend, stop rent and claim collateral and rent functions.
 {% endhint %}
 
 
