@@ -15,19 +15,19 @@ Main Subgraphs:
 
 
 ## POLYGON_MAINNET: 
- collateralizedContractAddresses: ["0xa0DAb138C1EC3a5D2142835E589C0a4870145107"]
- collateralFreeContractAddresses: ["0x4223e7608dB4619596b5c0E2fb0B0db5ee976bc0"]
- subgraphs: {
-     collateralized: "https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph",
-     collateralFree: "https://polygon.infy.network/subgraphs/name/infy-collateral-free/subgraph"
- }
+> collateralizedContractAddresses: ["0xa0DAb138C1EC3a5D2142835E589C0a4870145107"]
+> collateralFreeContractAddresses: ["0x4223e7608dB4619596b5c0E2fb0B0db5ee976bc0"]
+> subgraphs: {
+>     collateralized: "https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph",
+>     collateralFree: "https://polygon.infy.network/subgraphs/name/infy-collateral-free/subgraph"
+> }
      
 ## POLYGON_TESTNET: 
- collateralizedContractAddresses: ["0x145BC3029bA50B9F5279e1335b5B6963cF8693Df"]
- collateralFreeContractAddresses: ["0x9a8EFf42Ce306655B21FC527213A69fc894b821b"]
- subgraphs: {
-      collateralized: "https://mumbai.infy.network/subgraphs/name/infy-collateralized/subgraph",
-      collateralFree: "https://mumbai.infy.network/subgraphs/name/infy-collateral-free/subgraph"
- }
+> collateralizedContractAddresses: ["0x145BC3029bA50B9F5279e1335b5B6963cF8693Df"]
+> collateralFreeContractAddresses: ["0x9a8EFf42Ce306655B21FC527213A69fc894b821b"]
+> subgraphs: {
+>      collateralized: "https://mumbai.infy.network/subgraphs/name/infy-collateralized/subgraph",
+>      collateralFree: "https://mumbai.infy.network/subgraphs/name/infy-collateral-free/subgraph"
+> }
 
   

@@ -138,19 +138,19 @@ const handleLend = (lendingInputs:{lendingInputs:[]}) => {
 
 
 
->#### Note: Good to have below validation 
+#### Note: Good to have below validation 
 >1. the "nftStandards" should be one of the available in "NFTStandard" type of SDK.
 >2. The "maxRentDurations" must be grater than "minRentDurations".
 >3. The "paymentOptions" should be one of the available in "PaymentToken" type of SDK.
 >4. The "collateralPrices" value should be ZERO for the CollateralFree contract.
 
 
->- In addition, for Lend method only it will use two unique methods for below to values:
->    * dailyRentPrices: dailyRentPrices.map(x => packPrice(Number(x))),
->    * collateralPrices: collateralPrices.map(x => packPrice(Number(x))), 
+- In addition, for Lend method only it will use two unique methods for below to values:
+    * dailyRentPrices: dailyRentPrices.map(x => packPrice(Number(x))),
+    * collateralPrices: collateralPrices.map(x => packPrice(Number(x))), 
 
 
->#### 1. "packPrice" : Used by SDK
+#### 1. "packPrice" : Used by SDK
 >- Converts a number into the format that is acceptable by the NFTSafe contract.
 >- TLDR; to fit a single storage slot in the NFTSafe contract, we split the whole
 >- and decimal parts of a number to only have a maximum of 4 digits. That means, the
@@ -159,7 +159,7 @@ const handleLend = (lendingInputs:{lendingInputs:[]}) => {
 >- @param price value to pack
 >- @returns price format that is acceptable by NFTSafe contract
 
->#### 2. "unpackPrice" : Used in frontend
+#### 2. "unpackPrice" : Used in frontend
 >-  when you fetch data from the Blockchain after that you need to use "unpackPrice" method to get the actual value from a formatted value
 >- price is from 1 to 4294967295. i.e. from 0x00000001 to 0xffffffff
 >
@@ -168,8 +168,8 @@ const handleLend = (lendingInputs:{lendingInputs:[]}) => {
 
 
 
->For instance: 
->
+For instance: 
+
 >User entred value:  dailyRentPrices = 6 WETH , collateralPrices = 20 WETH
 >
 >Used by SDK
