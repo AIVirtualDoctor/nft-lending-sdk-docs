@@ -4,9 +4,7 @@
 
 ## SDK
 * [Install and Connect](index.md)
-
-* [Explore Utils](sdk/index.md)
-
+* [Explore Utils](network-config/explore-network-config.md)
 * [NFTSafe Contracts](sdk/index.md)
     * [Setup Contracts](sdk/setup-sdk.md)
     * [Lend NFT](sdk/lend-nft.md)
