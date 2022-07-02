@@ -6,7 +6,7 @@ TODO: ...
 ## Address Whitelister Contract
 
 {% hint style="info" %}
-Address Whitelister Contract must be used only my the project owner or team.
+Address Whitelister contract must be only used by the project owner or team.
 {% endhint %}
 
 Over here, this contract is providing some great methods to get better features.

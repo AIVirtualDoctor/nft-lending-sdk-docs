@@ -138,45 +138,45 @@ const handleLend = (lendingInputs:{lendingInputs:[]}) => {
 
 
 
-#### Note: Good to have below validation 
-1. the "nftStandards" should be one of the available in "NFTStandard" type of SDK.
-2. The "maxRentDurations" must be grater than "minRentDurations".
-3. The "paymentOptions" should be one of the available in "PaymentToken" type of SDK.
-4. The "collateralPrices" value should be ZERO for the CollateralFree contract.
+>#### Note: Good to have below validation 
+>1. the "nftStandards" should be one of the available in "NFTStandard" type of SDK.
+>2. The "maxRentDurations" must be grater than "minRentDurations".
+>3. The "paymentOptions" should be one of the available in "PaymentToken" type of SDK.
+>4. The "collateralPrices" value should be ZERO for the CollateralFree contract.
 
 
-- In addition, for Lend method only it will use two unique methods for below to values:
-    * dailyRentPrices: dailyRentPrices.map(x => packPrice(Number(x))),
-    * collateralPrices: collateralPrices.map(x => packPrice(Number(x))), 
+>- In addition, for Lend method only it will use two unique methods for below to values:
+>    * dailyRentPrices: dailyRentPrices.map(x => packPrice(Number(x))),
+>    * collateralPrices: collateralPrices.map(x => packPrice(Number(x))), 
 
 
-#### packPrice" : Used by SDK
-- Converts a number into the format that is acceptable by the NFTSafe contract.
-- TLDR; to fit a single storage slot in the NFTSafe contract, we split the whole
-- and decimal parts of a number to only have a maximum of 4 digits. That means, the
-- maximum price is 9999.9999. If more decimals are supplied, they are truncated.
-- If the price exceeds the maximum whole part, this throws.
-- @param price value to pack
-- @returns price format that is acceptable by NFTSafe contract
+>#### 1. "packPrice" : Used by SDK
+>- Converts a number into the format that is acceptable by the NFTSafe contract.
+>- TLDR; to fit a single storage slot in the NFTSafe contract, we split the whole
+>- and decimal parts of a number to only have a maximum of 4 digits. That means, the
+>- maximum price is 9999.9999. If more decimals are supplied, they are truncated.
+>- If the price exceeds the maximum whole part, this throws.
+>- @param price value to pack
+>- @returns price format that is acceptable by NFTSafe contract
 
-#### "unpackPrice" : Used in frontend
--  when you fetch data from the Blockchain after that you need to use "unpackPrice" method to get the actual value from a formatted value
-- price is from 1 to 4294967295. i.e. from 0x00000001 to 0xffffffff
+>#### 2. "unpackPrice" : Used in frontend
+>-  when you fetch data from the Blockchain after that you need to use "unpackPrice" method to get the actual value from a formatted value
+>- price is from 1 to 4294967295. i.e. from 0x00000001 to 0xffffffff
+>
+>    dailyRentPrice = unpackPrice(formated_dailyRentPrice),
+>    collateralPrice = unpackPrice(formated_collateralPrice),
 
-    dailyRentPrice = unpackPrice(formated_dailyRentPrice),
-    collateralPrice = unpackPrice(formated_collateralPrice),
 
 
-
-Example: 
-
-User entred value:  dailyRentPrices = 6 WETH , collateralPrices = 20 WETH
-
-Used by SDK
-dailyRentPrices = packprice(6);      // output:   0x00060000
-collateralPrices  = packPrice(20)   // output:   0x00140000
-
-Used in frontend
-dailyRentPrices =unpackPrice(0x00060000);     // output:  6
-collateralPrices  = unpackPrice(0x00140000)   // output:  20
+>For instance: 
+>
+>User entred value:  dailyRentPrices = 6 WETH , collateralPrices = 20 WETH
+>
+>Used by SDK
+>dailyRentPrices = packprice(6);      // output:   0x00060000
+>collateralPrices  = packPrice(20)   // output:   0x00140000
+>
+>Used in frontend
+>dailyRentPrices =unpackPrice(0x00060000);     // output:  6
+>collateralPrices  = unpackPrice(0x00140000)   // output:  20
 
