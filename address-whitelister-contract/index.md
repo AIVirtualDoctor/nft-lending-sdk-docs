@@ -19,7 +19,7 @@ import { ContractType, NetworkConfig, GetNetworkDetailsByChainId } from "@nftsaf
 
 export const useAddressWhitelister = () => {
 
-  const signer = getSigner(); // Get signer from your created WEB3 instance or provider 
+  const signer = getSigner(); // Get a signer from your created WEB3 instance or provider 
   const chainId = getChainId();  // Get currently connected chain's Id from your created WEB3 instance or provider
   const sdkNetworkConfigsByChainid = GetNetworkDetailsByChainId(Number(chainId)); // Note: ChainId must be supported chainId
   const addressWhitelisterContractAddress = sdkNetworkConfigsByChainid.addressWhitelisterContractAddresses;

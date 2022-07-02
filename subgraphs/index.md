@@ -3,7 +3,7 @@
 Something about subgraphs
 
 We can use the Moralis or any other subgraph but wait.
-Good to know, even we are providing some of the blockchains to fetch users all ERC721 and ERC1155 NFTs.
+Good to know, even though we are providing some of the blockchains to fetch users all ERC721 and ERC1155 NFTs.
 
 Let's take a look that how to import and use it.
 
@@ -29,7 +29,7 @@ type TypeNetworkDetails =
 ```
 {% endcode %}
 
-For information about moralis sdk you can find here: https://docs.moralis.io/
+For more information about the Moralis SDK you can find it here: https://docs.moralis.io/
 
 
 ### Import and use subgraphs

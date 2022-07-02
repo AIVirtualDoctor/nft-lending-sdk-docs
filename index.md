@@ -22,7 +22,7 @@ yarn create react-app my-app --template typescript
 
 ### 2. Install the SDK
 
-Make sure to have **WEB3**, **WEB3** or  **Wallet-connect** installed as dependencies. Then install **@nftsafe/sdk**:
+Make sure to have **web3**  or  **ethers** installed as dependencies. Then install **@nftsafe/sdk**:
 
 {% tabs %}
 {% tab title="npm" %}
@@ -39,7 +39,7 @@ yarn add @nftsafe/sdk
 {% endtabs %}
 
 ### 3. Import the SDK
-You can import any of the function from the below  list of exported function in the sdk:
+You can import any of the functions from the below  list of exported functions in the SDK:
 
 {% code title="src/index.tsx" %}
 ```javascript
@@ -57,7 +57,7 @@ export { DEFAULT_CHAINID, DEFAULT_CHAIN_NAME } from './consts';
 ```
 {% endcode %}
 
-Now, your can import required element and call it.
+Now, your can import the required element and call it.
 ```javascript
 import { NFTSafe, ... DEFAULT_CHAIN_NAME } from "@nftsafe/sdk";
 ```

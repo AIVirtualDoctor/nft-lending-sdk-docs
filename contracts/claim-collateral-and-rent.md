@@ -7,10 +7,10 @@
 import { PaymentToken, ContractType, NFTStandard } from "@nftsafe/sdk";
 import { BigNumber } from "ethers";
 
-const signer = getSigner(); // Get signer from your created WEB3 instance or provider 
+const signer = getSigner(); // Get a signer from your created WEB3 instance or provider 
 var nftSafeContractInstance;
 
-// useNFtSafe hook to get desired NftSafe contract instance 
+// Use the NFTSafe hook to get desired contract instance
 if(isCollateralized) {
   nftSafeContractInstance = useNFTSafeSDK(isCollateralized, signer, chainId); // isCollateralized = true
 }else{
@@ -21,7 +21,7 @@ if(isCollateralized) {
 {% endcode %}
 
 {% hint style="info" %}
-Make sure to add this above data into following function.
+Make sure to add the above data into the following function.
 {% endhint %}
 
 
@@ -55,4 +55,4 @@ const handleClaimRentOrCollateral = (selectedItems:{selectedItems:[]}) => {
  We have  successfully connected and used NFTsafe SDk
 {% endhint %}
 
-Feel free to explore the rest of the documentation in order to grasp the full power of NFTSafe SDK.
+Feel free to explore the rest of the documentation in order to grasp the full power of The NFTSafe SDK.

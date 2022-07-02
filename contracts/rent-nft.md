@@ -12,11 +12,11 @@ import {collateralizedContractAddress, collateralFreeContractAddresses, paymentT
 
 export const MAX_UINT256 =
   "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
-const signer = getSigner(); // Get signer from your created WEB3 instance or provider 
+const signer = getSigner(); // Get a signer from your created WEB3 instance or provider 
 var nftSafeContractInstance;
 var paymentTokenProviderInstance;
 
-// useNFtSafe hook to get desired NftSafe contract instance 
+// Use the NFTSafe hook to get desired contract instance
 if(isCollateralized) {
   nftSafeContractInstance = useNFTSafeSDK(isCollateralized, signer, chainId); // isCollateralized = true
 }else{
@@ -29,7 +29,8 @@ if(isCollateralized) {
 {% endcode %}
 
 {% hint style="info" %}
-Make sure to add this above data into following function as lend, rent, stop lend, stop rent and claim collateral and rent.
+Make sure to add the above data into the following functions such as to lend, rent, stop lending, stop renting, and claim collateral or rent.
+
 {% endhint %}
 
 
