@@ -5,7 +5,7 @@
 ```javascript
 // import supportive types
 import { PaymentToken, ContractType, NFTStandard } from "@nftsafe/sdk";
-import { BigNumber } from "ethers";
+import { ethers,BigNumber } from "ethers";
 import { ERC20Abi, ERC721Abi,ERC1155Abi } from "./abi";
 // import network config data like 
 import {collateralizedContractAddress, collateralFreeContractAddresses, paymentTokenProviderContractAddress, ...} from '/blockchainConfig';

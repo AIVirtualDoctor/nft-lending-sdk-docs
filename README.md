@@ -1,5 +1,7 @@
 # What is NFTSafe Sdk?
 
+TODO: ...
+
 {% hint style="info" %}
 **Good to know:**
 {% endhint %}

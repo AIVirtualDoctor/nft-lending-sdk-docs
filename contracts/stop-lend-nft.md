@@ -4,7 +4,7 @@
 ```javascript
 // import supportive types
 import { PaymentToken, ContractType, NFTStandard } from "@nftsafe/sdk";
-import { BigNumber } from "ethers";
+import { ethers,BigNumber } from "ethers";
 
 const signer = getSigner(); // Get signer from your created WEB3 instance or provider 
 var nftSafeContractInstance;

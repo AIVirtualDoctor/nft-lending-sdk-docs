@@ -1,6 +1,6 @@
 # NFTSafe Contracts
 
-Something about contracts
+TODO: ... Something about contracts
 
 Main Contracts:
 1. Collateralized Contract

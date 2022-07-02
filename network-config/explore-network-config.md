@@ -101,9 +101,13 @@ console.log(paymentTokenProviderContractAddress); //Payment Token Provide rContr
 //   polygonContactDetails.subgraphs.collateralFree
 //  ....
 
+
 /* .
    .
-   .
+*/
+console.log(sdkNetworkConfigsByChainid.rpc.toString());
+console.log(sdkNetworkConfigsByChainid.subgraphs.toString());
+/* .
    .
 */
 
