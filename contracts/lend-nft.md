@@ -170,11 +170,9 @@ const handleLend = (lendingInputs:{lendingInputs:[]}) => {
 
 For instance: 
 - User entred value:  dailyRentPrices = 6 WETH , collateralPrices = 20 WETH
-
 - Used by SDK
 >dailyRentPrices = packprice(6);      // output:   0x00060000
 >collateralPrices  = packPrice(20)   // output:   0x00140000
-
 - Used in frontend
 >dailyRentPrices =unpackPrice(0x00060000);     // output:  6
 >collateralPrices  = unpackPrice(0x00140000)   // output:  20
