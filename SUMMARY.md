@@ -4,7 +4,7 @@
 
 ## SDK
 
-* [SDK]
+* [NFTSafe SDK](sdk/index.md)
     * [Setup SDK](sdk/setup-sdk.md)
     * [Lend NFT](sdk/lend-nft.md)
     * [Rent NFT](sdk/ren-nft.md)
