@@ -1,4 +1,4 @@
-# NFTSafe Contracts
+# NFTSafe Smart Contracts
 
 Main Contracts:
 1. Collateralized Contract
@@ -30,27 +30,37 @@ You can read more under the sections:[Address Whitelister Contract](/contracts/i
 
 
 ## POLYGON_MAINNET: 
-Contracts:
->   Collateralized Contract Addresses: "0xa0DAb138C1EC3a5D2142835E589C0a4870145107"\
+
+### Smart Contracts:
+
+>**Contract name:** Collateralized Contract\
+>**Contract address:** 0xa0DAb138C1EC3a5D2142835E589C0a4870145107
+>
 >   View the [Collateralized Contract on Polygonscan](https://polygonscan.com/address/0xa0DAb138C1EC3a5D2142835E589C0a4870145107).
 
->   Collateral Free Contract Addresses: "0x4223e7608dB4619596b5c0E2fb0B0db5ee976bc0"\
+>**Contract name:** Collateral Free Contract\
+>**Contract address:** 0x4223e7608dB4619596b5c0E2fb0B0db5ee976bc0
+> 
 >   View the [Collateral Free Contract on Polygonscan](https://polygonscan.com/address/0x4223e7608dB4619596b5c0E2fb0B0db5ee976bc0).
 
->   Payment Token Provider Contract Address: "0x2BF8b29289F0FE9Ca22f7b054FE18162414E0B67"\ 
->   View the [Payment Token Provider Contract on Polygonscan](https://polygonscan.com/address/0x2BF8b29289F0FE9Ca22f7b054FE18162414E0B67).
+>**Contract name:** Payment Token Provider Contract\
+>**Contract address:** 0x2BF8b29289F0FE9Ca22f7b054FE18162414E0B67
+> 
+>View the [Payment Token Provider Contract on Polygonscan](https://polygonscan.com/address/0x2BF8b29289F0FE9Ca22f7b054FE18162414E0B67).
 
->   Address Whitelister Contract Address: "0x4dA60d2646a8ed5461457012f5cd7b87905E9e55"\
->   View the [Address Whitelister Contract on Polygonscan](https://polygonscan.com/address/0x4dA60d2646a8ed5461457012f5cd7b87905E9e55).
+>**Contract name:**  Address Whitelister Contract\
+>**Contract address:** 0x4dA60d2646a8ed5461457012f5cd7b87905E9e55
+>  
+>View the [Address Whitelister Contract on Polygonscan](https://polygonscan.com/address/0x4dA60d2646a8ed5461457012f5cd7b87905E9e55).
 
 
-Subgraphs:
+### Subgraphs:
 >   collateralized Subgraphs: "https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph"\
 
 >   collateral Free Subgraphs: "https://polygon.infy.network/subgraphs/name/infy-collateral-free/subgraph"
      
 ## POLYGON_TESTNET: 
-Contracts:
+### Smart Contracts:
 >   Collateralized Contract Addresses: "0x145BC3029bA50B9F5279e1335b5B6963cF8693Df"\
 >   View the [Collateralized Contract on Polygonscan](https://mumbai.polygonscan.com/address/0x145BC3029bA50B9F5279e1335b5B6963cF8693Df).
 
@@ -63,7 +73,7 @@ Contracts:
 >   Address Whitelister Contract Address: "0xD3f35A11b4E89F1CBeB86B55E800A57C147f5390"\
 >   View the [Address Whitelister Contract on Polygonscan](https://mumbai.polygonscan.com/address/0xD3f35A11b4E89F1CBeB86B55E800A57C147f5390).
 
-Subgraphs:
+### Subgraphs:
 >   collateralized Subgraphs: "https://mumbai.infy.network/subgraphs/name/infy-collateralized/subgraph"\
 
 >   collateral Free Subgraphs: "https://mumbai.infy.network/subgraphs/name/infy-collateral-free/subgraph"   
