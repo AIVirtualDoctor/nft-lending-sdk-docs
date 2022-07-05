@@ -16,7 +16,7 @@ import { NetworkConfig, GetNetworkDetailsByChainId } from "@nftsafe/sdk";
 
 
 ### 1.Network Config
-SDK provider the "NetworkConfig" JSON to get the Contract addresses, Subgraph URL, Chain information, and the Blockchain supporting utils as below.
+SDK provides the "NetworkConfig" JSON to get the Contract addresses, Subgraph URL, Chain information, and the Blockchain supporting utils as below.
 ```javascript
 
 import { TypeNetworkDetails } from "@nftsafe/sdk";
@@ -136,7 +136,7 @@ import { NFTStandard } from "@nftsafe/sdk";
 // you can use it as below
 // Ex.
 NFTStandard.E721
-PaymentTNFTStandardoken.E1155
+NFTStandard.E1155
 ```
 {% endcode %}
 
@@ -158,6 +158,7 @@ SupportedChainIds.ETHEREUM_KOVAN
 
 ### 5.Contract Type:
 ```javascript
+import { ContractType } from "@nftsafe/sdk";
 // you can use it as below
 // Ex.
 ContractType.COLLATERALIZED

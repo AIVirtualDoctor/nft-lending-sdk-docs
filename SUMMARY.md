@@ -1,6 +1,7 @@
 # Table of contents
 
-* [What is NFTSafe SDK?](README.md)
+## 👋 Introduction
+* [Why use NFTSafe SDK?](README.md)
 
 ## SDK
 * [Install and Connect](index.md)
@@ -14,3 +15,9 @@
     * [Claim Collateral and Rent](contracts/claim-collateral-and-rent.md)
 * [Address Whitlister Contracts](address-whitelister-contract/index.md)
 * [Subgraphs](subgraphs/index.md)
+
+## Social & Support
+* [FAQ](social-supports/faq.md)
+* [Social Accounts & Communities](social-supports/social-communities.md)
+* [Litepaper]()
+* [Disclaimer](social-supports/disclaimer.md)

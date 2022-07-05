@@ -29,7 +29,7 @@ type TypeNetworkDetails =
 ```
 {% endcode %}
 
-For more information about the Moralis SDK you can find it here: https://docs.moralis.io/
+For more information about the Moralis SDK you can find it here: [https://docs.moralis.io/](https://docs.moralis.io/) 
 
 
 ### Import and use subgraphs
