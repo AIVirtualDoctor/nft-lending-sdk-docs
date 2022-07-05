@@ -13,7 +13,6 @@ Infy has a highly active, and quickly growing community. You can participate as 
 > [1. https://t.me/infy_protocol](https://t.me/infy_protocol)\
 <!-- > [2.	https://t.me/infy_protocol_announcement](https://t.me/infy_protocol_announcement)
 > [3.	https://t.me/infy_protocol_bug_bounty](https://t.me/infy_protocol_bug_bounty) -->
-> 
 > **🤖Discord**\
 > [https://discord.com/invite/WACaTejJWN](https://discord.com/invite/WACaTejJWN)
 

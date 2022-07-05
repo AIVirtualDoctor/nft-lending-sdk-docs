@@ -17,7 +17,7 @@
 * [Subgraphs](subgraphs/index.md)
 
 ## Social & Support
-* [FAQ](social-supports/faq.md)
+* [FAQ](social-supports/faqs.md)
 * [Social Accounts & Communities](social-supports/social-communities.md)
-* [Litepaper]()
+* [Litepaper]
 * [Disclaimer](social-supports/disclaimer.md)
