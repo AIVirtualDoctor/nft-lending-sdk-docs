@@ -8,7 +8,7 @@ Infy has a highly active, and quickly growing community. You can participate as 
 > 
 > **🐦 Twitter**\
 > ​​[https://twitter.com/infy_protocol](https://twitter.com/infy_protocol)
-> 
+
 > **💬 Telegram**\
 > [1. https://t.me/infy_protocol](https://t.me/infy_protocol)\
 <!-- > [2.	https://t.me/infy_protocol_announcement](https://t.me/infy_protocol_announcement)

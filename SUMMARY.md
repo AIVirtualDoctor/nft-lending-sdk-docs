@@ -6,7 +6,7 @@
 ## SDK
 * [Getting Started](index.md)
 * [Explore SDK Utils](network-config/explore-network-config.md)
-* [NFTSafe Contracts And It's Features In Action](contracts/index.md)
+* [NFTSafe Contracts & It's Features In Action](contracts/index.md)
     * [Setup Contracts](contracts/setup-sdk.md)
     * [Lend NFT](contracts/lend-nft.md)
     * [Rent NFT](contracts/rent-nft.md)
