@@ -55,9 +55,12 @@ You can read more under the sections:[Address Whitelister Contract](/contracts/i
 
 
 ### Subgraphs:
->   collateralized Subgraphs: "https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph"\
+>**Subgraph name:**  collateralized Subgraph\
+>**Subgraph Endpoint:** ["https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph"](https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph)\
 
->   collateral Free Subgraphs: "https://polygon.infy.network/subgraphs/name/infy-collateral-free/subgraph"
+>**Subgraph name:** collateral Free Subgraph\
+>**Subgraph Endpoint:**[ "https://polygon.infy.network/subgraphs/name/infy-collateral-free/subgraph"](https://polygon.infy.network/subgraphs/name/infy-collateral-free/subgraph)
+     
      
 ## POLYGON_TESTNET: 
 ### Smart Contracts:
