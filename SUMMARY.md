@@ -4,7 +4,7 @@
 * [Why use NFTSafe SDK?](README.md)
 
 ## SDK
-* [Install and Connect](index.md)
+* [Getting Started](index.md)
 * [Explore SDK Utils](network-config/explore-network-config.md)
 * [NFTSafe Contracts](contracts/index.md)
     * [Setup Contracts](contracts/setup-sdk.md)

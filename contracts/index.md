@@ -21,11 +21,14 @@ TODO:
 
 ## What is Payment Token Provider Contract?
 It also gives you a Payment Token Provider Contract which will help you to set and fetch Payment Tokens, NFTSafe  Collateralized, and Collateral Free contracts will accept only that payment tokens. 
+
 You will get to know more about it later on this document. 
 
 ## What is Address Whitelister Contract?
 NFTSafe SDK's Address Whitelister Contract give you the power to check user address is whitelisted or not and, add or remove user address into a whitelist.
+
 Note: it should only be used by Admin.
+
 You can read more under the sections:[Address Whitelister Contract](/contracts/index)
 
 
@@ -56,10 +59,10 @@ You can read more under the sections:[Address Whitelister Contract](/contracts/i
 ### Subgraphs:
 
 >**Subgraph name:**  collateralized Subgraph\
->**Subgraph Endpoint:** ["https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph"](https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph)
+>**Subgraph endpoint:** ["https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph"](https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph)
 
 >**Subgraph name:** collateral Free Subgraph\
->**Subgraph Endpoint:**[ "https://polygon.infy.network/subgraphs/name/infy-collateral-free/subgraph"](https://polygon.infy.network/subgraphs/name/infy-collateral-free/subgraph)
+>**Subgraph endpoint:**[ "https://polygon.infy.network/subgraphs/name/infy-collateral-free/subgraph"](https://polygon.infy.network/subgraphs/name/infy-collateral-free/subgraph)
      
 
 
@@ -91,8 +94,8 @@ You can read more under the sections:[Address Whitelister Contract](/contracts/i
 ### Subgraphs:
 
 >**Subgraph name:**  collateralized Subgraph\
->**Subgraph Endpoint:** ["https://mumbai.infy.network/subgraphs/name/infy-collateralized/subgraph"](https://mumbai.infy.network/subgraphs/name/infy-collateralized/subgraph)
+>**Subgraph endpoint:** ["https://mumbai.infy.network/subgraphs/name/infy-collateralized/subgraph"](https://mumbai.infy.network/subgraphs/name/infy-collateralized/subgraph)
 
 >**Subgraph name:** collateral Free Subgraph\
->**Subgraph Endpoint:**["https://mumbai.infy.network/subgraphs/name/infy-collateral-free/subgraph"](https://mumbai.infy.network/subgraphs/name/infy-collateral-free/subgraph)
+>**Subgraph endpoint:**["https://mumbai.infy.network/subgraphs/name/infy-collateral-free/subgraph"](https://mumbai.infy.network/subgraphs/name/infy-collateral-free/subgraph)
   
