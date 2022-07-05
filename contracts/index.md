@@ -26,7 +26,7 @@ You will get to know more about it later on this document.
 ## What is Address Whitelister Contract?
 NFTSafe SDK's Address Whitelister Contract give you the power to check user address is whitelisted or not and, add or remove user address into a whitelist.
 Note: it should only be used by Admin.
-You can read more under the sections:[Address Whitelister Contract](/contracts/index.md)
+You can read more under the sections:[Address Whitelister Contract](/contracts/index)
 
 
 ## POLYGON_MAINNET: 
