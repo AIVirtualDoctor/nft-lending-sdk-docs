@@ -53,32 +53,46 @@ You can read more under the sections:[Address Whitelister Contract](/contracts/i
 >  
 >View the [Address Whitelister Contract on Polygonscan](https://polygonscan.com/address/0x4dA60d2646a8ed5461457012f5cd7b87905E9e55).
 
-
 ### Subgraphs:
+
 >**Subgraph name:**  collateralized Subgraph\
->**Subgraph Endpoint:** ["https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph"](https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph)\
+>**Subgraph Endpoint:** ["https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph"](https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph)
 
 >**Subgraph name:** collateral Free Subgraph\
 >**Subgraph Endpoint:**[ "https://polygon.infy.network/subgraphs/name/infy-collateral-free/subgraph"](https://polygon.infy.network/subgraphs/name/infy-collateral-free/subgraph)
      
-     
+
+
+
 ## POLYGON_TESTNET: 
+
 ### Smart Contracts:
->   Collateralized Contract Addresses: "0x145BC3029bA50B9F5279e1335b5B6963cF8693Df"\
+
+>**Contract name:** Collateralized Contract\
+>**Contract address:** 0x145BC3029bA50B9F5279e1335b5B6963cF8693Df
+>
 >   View the [Collateralized Contract on Polygonscan](https://mumbai.polygonscan.com/address/0x145BC3029bA50B9F5279e1335b5B6963cF8693Df).
 
->   Collateral Free Contract Addresses: "0x9a8EFf42Ce306655B21FC527213A69fc894b821b"\
+>**Contract name:** Collateral Free Contract\
+>**Contract address:** 0x9a8EFf42Ce306655B21FC527213A69fc894b821b
+> 
 >   View the [Collateral Free Contract on Polygonscan](https://mumbai.polygonscan.com/address/0x9a8EFf42Ce306655B21FC527213A69fc894b821b).
 
->   Payment Token Provider Contract Address: "0x01303fb2DC356cAe795A75B939b820Db85726B9f"\ 
->   View the [Payment Token Provider Contract on Polygonscan](https://mumbai.polygonscan.com/address/0x01303fb2DC356cAe795A75B939b820Db85726B9f).
+>**Contract name:** Payment Token Provider Contract\
+>**Contract address:** 0x01303fb2DC356cAe795A75B939b820Db85726B9f
+> 
+>View the [Payment Token Provider Contract on Polygonscan](https://mumbai.polygonscan.com/address/0x01303fb2DC356cAe795A75B939b820Db85726B9f).
 
->   Address Whitelister Contract Address: "0xD3f35A11b4E89F1CBeB86B55E800A57C147f5390"\
->   View the [Address Whitelister Contract on Polygonscan](https://mumbai.polygonscan.com/address/0xD3f35A11b4E89F1CBeB86B55E800A57C147f5390).
+>**Contract name:**  Address Whitelister Contract\
+>**Contract address:** 0xD3f35A11b4E89F1CBeB86B55E800A57C147f5390
+>  
+>View the [Address Whitelister Contract on Polygonscan](https://mumbai.polygonscan.com/address/0xD3f35A11b4E89F1CBeB86B55E800A57C147f5390).
 
 ### Subgraphs:
->   collateralized Subgraphs: "https://mumbai.infy.network/subgraphs/name/infy-collateralized/subgraph"\
 
->   collateral Free Subgraphs: "https://mumbai.infy.network/subgraphs/name/infy-collateral-free/subgraph"   
+>**Subgraph name:**  collateralized Subgraph\
+>**Subgraph Endpoint:** ["https://mumbai.infy.network/subgraphs/name/infy-collateralized/subgraph"](https://mumbai.infy.network/subgraphs/name/infy-collateralized/subgraph)
 
+>**Subgraph name:** collateral Free Subgraph\
+>**Subgraph Endpoint:**["https://mumbai.infy.network/subgraphs/name/infy-collateral-free/subgraph"](https://mumbai.infy.network/subgraphs/name/infy-collateral-free/subgraph)
   
