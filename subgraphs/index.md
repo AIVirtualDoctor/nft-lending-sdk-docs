@@ -2,11 +2,36 @@
 
 Something about subgraphs
 
+Main Subgraphs:
+1. Collateralized
+2. Collateral Free
+
+## POLYGON MAINNET: 
+
+### Subgraphs:
+
+>**Subgraph name:**  collateralized Subgraph\
+>**Subgraph endpoint:** ["https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph"](https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph)
+
+>**Subgraph name:** collateral Free Subgraph\
+>**Subgraph endpoint:**[ "https://polygon.infy.network/subgraphs/name/infy-collateral-free/subgraph"](https://polygon.infy.network/subgraphs/name/infy-collateral-free/subgraph)
+     
+
+## POLYGON TESTNET: 
+
+### Subgraphs:
+
+>**Subgraph name:**  collateralized Subgraph\
+>**Subgraph endpoint:** ["https://mumbai.infy.network/subgraphs/name/infy-collateralized/subgraph"](https://mumbai.infy.network/subgraphs/name/infy-collateralized/subgraph)
+
+>**Subgraph name:** collateral Free Subgraph\
+>**Subgraph endpoint:**["https://mumbai.infy.network/subgraphs/name/infy-collateral-free/subgraph"](https://mumbai.infy.network/subgraphs/name/infy-collateral-free/subgraph)
+  
+
 We can use the Moralis or any other subgraph but wait.
 Good to know, even though we are providing some of the blockchains to fetch users all ERC721 and ERC1155 NFTs.
 
 Let's take a look that how to import and use it.
-
 
 ```javascript
 import { TypeNetworkDetails } from "@nftsafe/sdk";

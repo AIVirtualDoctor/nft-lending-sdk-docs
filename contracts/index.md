@@ -6,10 +6,6 @@ Main Contracts:
 3. Payment Token Provider Contract
 4. Address Whitelister Contract
 
-Main Subgraphs:
-1. Collateralized
-2. Collateral Free
-
 ### What is Collateralization?
 Collateralization is the use of a valuable asset as collateral to secure a loan. If the borrower defaults on the loan, the lender may seize and sell the asset to offset their loss.
 
@@ -32,7 +28,7 @@ Note: it should only be used by Admin.
 You can read more under the sections:[Address Whitelister Contract](/contracts/index)
 
 
-## POLYGON_MAINNET: 
+## POLYGON MAINNET: 
 
 ### Smart Contracts:
 
@@ -56,18 +52,8 @@ You can read more under the sections:[Address Whitelister Contract](/contracts/i
 >  
 >View the [Address Whitelister Contract on Polygonscan](https://polygonscan.com/address/0x4dA60d2646a8ed5461457012f5cd7b87905E9e55).
 
-### Subgraphs:
 
->**Subgraph name:**  collateralized Subgraph\
->**Subgraph endpoint:** ["https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph"](https://polygon.infy.network/subgraphs/name/infy-collateralized/subgraph)
-
->**Subgraph name:** collateral Free Subgraph\
->**Subgraph endpoint:**[ "https://polygon.infy.network/subgraphs/name/infy-collateral-free/subgraph"](https://polygon.infy.network/subgraphs/name/infy-collateral-free/subgraph)
-     
-
-
-
-## POLYGON_TESTNET: 
+## POLYGON TESTNET: 
 
 ### Smart Contracts:
 
@@ -91,11 +77,3 @@ You can read more under the sections:[Address Whitelister Contract](/contracts/i
 >  
 >View the [Address Whitelister Contract on Polygonscan](https://mumbai.polygonscan.com/address/0xD3f35A11b4E89F1CBeB86B55E800A57C147f5390).
 
-### Subgraphs:
-
->**Subgraph name:**  collateralized Subgraph\
->**Subgraph endpoint:** ["https://mumbai.infy.network/subgraphs/name/infy-collateralized/subgraph"](https://mumbai.infy.network/subgraphs/name/infy-collateralized/subgraph)
-
->**Subgraph name:** collateral Free Subgraph\
->**Subgraph endpoint:**["https://mumbai.infy.network/subgraphs/name/infy-collateral-free/subgraph"](https://mumbai.infy.network/subgraphs/name/infy-collateral-free/subgraph)
-  
